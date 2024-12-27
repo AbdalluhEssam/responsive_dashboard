@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive/featuers/adaptive_app/widgets/desktop_layout.dart';
 import 'package:responsive/featuers/adaptive_app/widgets/tablet_layout.dart';
-
-
-import 'adaptive_layout.dart';
+import '../../../core/helper/adaptive.dart';
 import 'mobile_layout.dart';
 
 class HomeViewBody extends StatelessWidget {
