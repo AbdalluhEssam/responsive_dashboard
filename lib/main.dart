@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'featuers/adaptive_app/views/home_view.dart';
+import 'package:responsive/featuers/responsive_dashboard/views/dashborad_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: const HomeView(),
+      home: const DashboardView(),
     );
   }
 }

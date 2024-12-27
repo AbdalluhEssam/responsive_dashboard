@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive/views/home_view.dart';
+
+import 'featuers/adaptive_app/views/home_view.dart';
 
 void main() {
   runApp(const MyApp());
