@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Responsive Dashboard',
       debugShowCheckedModeBanner: false,
       home: const DashboardView(),
     );
