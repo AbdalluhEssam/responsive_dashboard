@@ -7,15 +7,18 @@ class TransactionHistoryListView extends StatelessWidget {
   const TransactionHistoryListView({super.key});
 
   static List<TransactionModel> item = [
-    TransactionModel(title: "Cash Withdrawal",
+    TransactionModel(
+        title: "Cash Withdrawal",
         data: "13 Apr, 2022 ",
         amount: "20,129",
         isWithdrawal: true),
-    TransactionModel(title: "Landing Page project",
+    TransactionModel(
+        title: "Landing Page project",
         data: "13 Apr, 2022 at 3:30 PM",
         amount: "2,000",
         isWithdrawal: false),
-    TransactionModel(title: "Juni Mobile App project",
+    TransactionModel(
+        title: "Juni Mobile App project",
         data: "13 Apr, 2022 at 3:30 PM",
         amount: "20,129",
         isWithdrawal: false),
@@ -23,9 +26,8 @@ class TransactionHistoryListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemBuilder: (context, index) =>TransactionItem(transactionModel: item[index],),
-      itemCount: item.length,);
+    return Column(
+      children:item.map((e) => TransactionItem(transactionModel: e,)).toList()
+    );
   }
 }

@@ -18,10 +18,13 @@ class ItemDetails extends StatelessWidget {
           color: itemDetailsModel.color,
         ),
       ),
-      title: Text(
+      title: FittedBox(
+        alignment: AlignmentDirectional.centerStart,
+        fit: BoxFit.scaleDown,
+        child: Text(
         itemDetailsModel.title,
         style: AppStyles.styleRegular16(context),
-      ),
+      ),),
       trailing: Text(
         itemDetailsModel.value,
         style: AppStyles.styleMedium16(context),

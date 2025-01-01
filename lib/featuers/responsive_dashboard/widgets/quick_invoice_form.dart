@@ -33,7 +33,6 @@ class QuickInvoiceForm extends StatelessWidget {
          children: [
            CustomButton(backgroundColor: Colors.transparent,textColor: Color(0xFF4DB7F2),),
            const SizedBox(width: 24),
-
            CustomButton(),
          ],
        )
